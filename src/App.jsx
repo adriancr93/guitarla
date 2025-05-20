@@ -1,10 +1,20 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Header from './components/Header'
 import Guitar from './components/Guitar'
 
+
 function App() {
+  const [auth, setAuth] = useState(false)
 
-
+  useEffect(() => {
+    if (auth) {
+      console.log('Autenticado')   
+    }
+  }, [auth])
+  
+  setTimeout(() => {
+    setAuth(true)
+  }, 3000);
 
   return (
     <>
@@ -38,4 +48,18 @@ export default App
   const [auth, setAuth] = useState(false)
   const [total, setTotal] = useState(0)
   const [cart, setCart] = useState([])
+
+// Effect
+ const [auth, setAuth] = useState(false)
+
+  useEffect(() => {
+    if (auth) {
+      console.log('Autenticado')   
+    }
+  }, [auth])
+  
+  setTimeout(() => {
+    setAuth(true)
+  }, 3000);
 */
+
