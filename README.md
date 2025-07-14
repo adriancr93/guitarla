@@ -49,3 +49,29 @@ La forma en que React maneja los eventos es muy similar a como lo hace Javascrip
 Los eventos son camelCase, es decir en lugar de onchange se utiliza onChange, en lugar de onclick se utiliza onClick
 
 Tambien a diferencia de JS y HTML, donde se coloca el nombre de la funcion en un string en React(JSX) se utiliza la funcion entre llaves{}
+
+Crear tus propios
+
+Hooks
+
+Existe una gran ventaja de crear tus propios Hooks y es la de incorporar State y otros Hooks de React a tu propio codigo para poderlo re-utilizar en otros proyectos.
+
+Otra gran ventaja es la de organizar tu codigo, de esa froma el hook se encarga de toda la logica del state mientras que tus componentes solo de mostrar la informacion.
+
+Ventaja
+De crear tus propios Hooks
+
+Tu Codigo personalizado tendra todas las ventajas de React como son: state, effects, integrar otros hooks y el performance.
+
+Re-utilizable en otros proyectos.
+
+Facul de escribir pruebas.
+
+Como crear tus propios Hooks?
+
+Los hooks son funciones de JavaScript pero tienen algunas reglas.
+
+Tus hooks deben seguir la convencion de react use{hook} de esta forma React escanea tu codigo en busqueda de posibles problemas con las Reglas de los Hooks.
+
+Un Hook usualmente solo debe tener logica y no presentacion (para eso es un componente)
+
